@@ -133,25 +133,16 @@ p {
 
 /* Lists */
 ul {
-  padding-left: 20px;
-}
-
-li {
-  margin-bottom: 8px;
-}
-
-/* Study section list styling */
-ul {
   padding-left: 32px;   /* increases indent */
   margin-top: 12px;
 }
 
-ul li {
+li {
   margin-bottom: 10px;
   color: var(--text);   /* ensures text is full white */
 }
 
-ul li::marker {
+li::marker {
   color: var(--text);   /* makes bullet same color as text */
 }
 
