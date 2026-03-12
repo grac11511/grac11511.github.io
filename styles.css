@@ -114,9 +114,21 @@ p {
 
 /* Simple content block (very subtle) */
 .card {
-  margin-top: 16px;
-  padding: 18px 0;
-  border-top: 1px solid var(--rule);
+  margin-top: 20px;
+  padding: 26px 28px;
+  border-radius: 18px;
+
+  background: linear-gradient(
+    145deg,
+    #111c33,
+    #0f172a
+  );
+
+  border: 1px solid rgba(148, 163, 184, 0.15);
+
+  box-shadow:
+    0 8px 30px rgba(0, 0, 0, 0.35),
+    inset 0 1px 0 rgba(255,255,255,0.04);
 }
 
 /* Lists */
