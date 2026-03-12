@@ -139,11 +139,11 @@ ul {
 
 li {
   margin-bottom: 10px;
-  color: var(--text);   /* ensures text is full white */
+  color: var(--muted);   /* ensures text is full white */
 }
 
 li::marker {
-  color: var(--text);   /* makes bullet same color as text */
+  color: var(--muted);   /* makes bullet same color as text */
 }
 
 /* Footer */
