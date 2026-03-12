@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grace Wong | Portfolio</title>
+    <meta name="description" content="Grace Wong — Signups forecasting, risk analytics, UX & graphic design." />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="nav">
+          <a class="logo" href="#top" aria-label="Home">Grace Wong</a>
+          <div class="nav-links">
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </nav>
+
+        <section class="hero" id="top">
+          <div class="hero-left">
+            <p class="badge">Data • Forecasting • Risk • Design</p>
+            <h1>Hi, I’m Grace.</h1>
+            <p class="lead">
+              I build forecasting pipelines, stress testing models, and human-friendly analytics —
+              with a background spanning <strong>Canva</strong>, <strong>Macquarie Bank</strong>, and UX/graphic design.
+            </p>
+
+            <div class="cta-row">
+              <a class="btn primary" href="#projects">View projects</a>
+              <a class="btn" href="#contact">Contact</a>
+            </div>
+
+            <div class="link-row">
+              <a href="https://github.com/grac11511" target="_blank" rel="noreferrer">GitHub</a>
+              <span class="dot">•</span>
+              <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
+              <span class="dot">•</span>
+              <a href="https://immense-innovation-a94.notion.site/Hey-I-m-Grace-61a56d3950dc4910bec50b6f1927a4b2" target="_blank" rel="noreferrer">Design portfolio</a>
+            </div>
+          </div>
+
+          <div class="hero-right">
+            <div class="card profile">
+              <div class="profile-top">
+                <div class="avatar" aria-hidden="true">GW</div>
+                <div>
+                  <p class="name">Grace Wong</p>
+                  <p class="meta">Sydney • Data & Analytics</p>
+                </div>
+              </div>
+              <div class="profile-stats">
+                <div class="stat">
+                  <p class="stat-num">3</p>
+                  <p class="stat-label">Focus areas</p>
+                </div>
+                <div class="stat">
+                  <p class="stat-num">R</p>
+                  <p class="stat-label">Forecasting</p>
+                </div>
+                <div class="stat">
+                  <p class="stat-num">SQL</p>
+                  <p class="stat-label">Analytics</p>
+                </div>
+              </div>
+              <p class="small">
+                Interested in forecasting, experimentation, and building tools people actually use.
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </header>
+
+    <main class="container">
+      <section id="projects" class="section">
+        <div class="section-title">
+          <h2>Projects</h2>
+          <p>Selected work across forecasting, risk analytics, and design.</p>
+        </div>
+
+        <div class="grid">
+          <article class="card project">
+            <div class="project-head">
+              <h3>Signups Forecasting using Prophet (R) — Canva</h3>
+              <p class="meta">2025–2026 • R • Prophet • Pipelines</p>
+            </div>
+
+            <p>
+              Built and streamlined a multi-country forecasting pipeline for signups using Prophet,
+              including automated transformations, regressor integration, and structured model extracts.
+            </p>
+
+            <ul class="bullets">
+              <li>Modularized country/region loops for maintainability and scale.</li>
+              <li>Integrated regressors (e.g., campaigns / seasonality factors) and automated outputs.</li>
+              <li>Focused on reproducibility, clean function design, and de-duplication.</li>
+            </ul>
+
+            <div class="project-links">
+              <a class="btn small" href="https://github.com/grac11511/profit-from-prophet/" target="_blank" rel="noreferrer">
+                View repo
+              </a>
+            </div>
+          </article>
+
+          <article class="card project">
+            <div class="project-head">
+              <h3>Credit Risk Stress Testing — Macquarie Bank</h3>
+              <p class="meta">2020–2021 • R • IFRS 9 • ECL</p>
+            </div>
+
+            <p>
+              Built an end-to-end stress testing workflow including re-origination/growth logic,
+              FX & MtM overlays, transition matrices, PD/LGD attachment, and ECL calculation.
+            </p>
+
+            <ul class="bullets">
+              <li>Designed layered joins for scenario overlays (FX, MtM, notching, forced defaults).</li>
+              <li>Implemented discrete + continuous transition matrix mapping and exposure roll-forward.</li>
+              <li>Calculated ECL with maturity handling, staging transitions, and EAD profiles.</li>
+            </ul>
+
+            <details class="details">
+              <summary>What I’d improve if rebuilding today</summary>
+              <ul class="bullets">
+                <li>Centralize column names + constants at the top (no scattered hardcoding).</li>
+                <li>Refactor repeated MQ blocks into functions + vectorized operations.</li>
+                <li>Add structured logging, timing, and clearer error handling.</li>
+              </ul>
+            </details>
+          </article>
+
+          <article class="card project">
+            <div class="project-head">
+              <h3>UX / Graphic Design</h3>
+              <p class="meta">2019–2022 • Visual design • UX</p>
+            </div>
+
+            <p>
+              Portfolio of UX and graphic design work across projects and visual explorations.
+            </p>
+
+            <div class="project-links">
+              <a class="btn small" href="https://immense-innovation-a94.notion.site/Hey-I-m-Grace-61a56d3950dc4910bec50b6f1927a4b2" target="_blank" rel="noreferrer">
+                View Notion portfolio
+              </a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="skills" class="section">
+        <div class="section-title">
+          <h2>Skills</h2>
+          <p>A quick snapshot of tools I use most.</p>
+        </div>
+
+        <div class="pill-grid">
+          <span class="pill">R (tidyverse, data.table)</span>
+          <span class="pill">Forecasting (Prophet)</span>
+          <span class="pill">Experimentation & metrics</span>
+          <span class="pill">Risk analytics (IFRS 9 / ECL)</span>
+          <span class="pill">SQL</span>
+          <span class="pill">Data pipelines</span>
+          <span class="pill">Storytelling / stakeholder comms</span>
+          <span class="pill">UX / Visual design</span>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <div class="section-title">
+          <h2>Contact</h2>
+          <p>Best way to reach me:</p>
+        </div>
+
+        <div class="card contact">
+          <p class="contact-line">
+            Email: <a href="mailto:gracewong@canva.com">gracewong@canva.com</a>
+          </p>
+          <p class="contact-line">
+            GitHub: <a href="https://github.com/grac11511" target="_blank" rel="noreferrer">github.com/grac11511</a>
+          </p>
+          <p class="contact-line">
+            LinkedIn: <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">Add your link</a>
+          </p>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <p>© <span id="year"></span> Grace Wong</p>
+      </footer>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
