@@ -140,6 +140,21 @@ li {
   margin-bottom: 8px;
 }
 
+/* Study section list styling */
+ul {
+  padding-left: 32px;   /* increases indent */
+  margin-top: 12px;
+}
+
+ul li {
+  margin-bottom: 10px;
+  color: var(--text);   /* ensures text is full white */
+}
+
+ul li::marker {
+  color: var(--text);   /* makes bullet same color as text */
+}
+
 /* Footer */
 footer {
   border-top: 1px solid var(--rule);
