@@ -90,6 +90,8 @@ header {
 /* Sections */
 section {
   margin-bottom: 100px;
+  /* ensure anchored headings aren't hidden by sticky header */
+  scroll-margin-top: 80px;
 }
 
 /* Typography */
@@ -104,6 +106,12 @@ h2 {
   font-size: 32px;
   font-weight: 500;
   margin-bottom: 18px;
+}
+
+/* special heading for muted centred text */
+.muted-center {
+  color: var(--muted);
+  text-align: center;
 }
 
 h3 {
@@ -208,4 +216,140 @@ footer {
   text-align: center;
   font-size: 16px;
   color: var(--muted);
+}
+
+
+/* =========================
+   Case study page (Kube)
+========================= */
+
+.case-study {
+  padding-top: 40px;
+  padding-bottom: 80px;
+}
+
+.back-link {
+  display: inline-block;
+  margin: 12px 0 28px;
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.back-link:hover {
+  color: var(--text);
+}
+
+.case-hero {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 32px;
+  align-items: center;
+  margin-bottom: 36px;
+}
+
+.case-hero h1 {
+  margin: 0 0 10px;
+}
+
+.subtitle {
+  color: var(--muted);
+  line-height: 1.6;
+  margin: 0 0 16px;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 12px 0 18px;
+}
+
+.chip {
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: var(--muted);
+  border-radius: 999px;
+  padding: 8px 12px;
+  font-size: 0.95rem;
+}
+
+.case-links .btn {
+  display: inline-block;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 999px;
+  padding: 10px 14px;
+  text-decoration: none;
+  color: var(--text);
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.case-links .btn:hover {
+  transform: translateY(-2px);
+  border-color: rgba(255, 255, 255, 0.28);
+}
+
+.hero-image {
+  width: 170%;
+  max-width: 900px; /* allow image to appear larger */
+  height: auto;
+  border-radius: 16px;
+  display: block;
+  margin: 0 auto;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.case-section {
+  margin: 34px 0;
+}
+
+.case-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  margin-top: 16px;
+}
+
+.case-card {
+  padding: 18px 18px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  margin-top: 16px;
+}
+
+.side-by-side {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.side-by-side img {
+  width: 65%;
+  height: auto;
+  border-radius: 14px;
+  display: block;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  flex: 0 0 5%;
+}
+
+.side-by-side figcaption {
+  flex: 0 0 35%;
+  color: var(--muted);
+}
+
+/* Mobile */
+@media (max-width: 900px) {
+  .case-hero {
+    grid-template-columns: 1fr;
+  }
+
+  .case-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr;
+  }
 }
