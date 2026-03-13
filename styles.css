@@ -339,6 +339,26 @@ footer {
   color: var(--muted);
 }
 
+.side-by-side-mob {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.side-by-side-mob img {
+  width: 40%;
+  height: auto;
+  border-radius: 14px;
+  display: block;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  flex: 0 0 5%;
+}
+
+.side-by-side-mob figcaption {
+  flex: 0 0 60%;
+  color: var(--muted);
+}
+
 /* Mobile */
 @media (max-width: 900px) {
   .case-hero {
