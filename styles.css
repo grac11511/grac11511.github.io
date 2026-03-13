@@ -39,9 +39,13 @@ a:hover {
 
 /* Header */
 header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
   border-bottom: 1px solid var(--rule);
-  background: rgba(15, 23, 42, 0.85);
-  backdrop-filter: blur(6px);
+  background: rgba(15, 23, 42, 0.95);
+  backdrop-filter: blur(8px);
 }
 
 .nav {
@@ -70,6 +74,17 @@ header {
   max-width: var(--maxw);
   margin: 0 auto;
   padding: 70px 16px;
+}
+
+.profile-pic {
+  width: 140px;
+  height: 140px;
+  border-radius: 100%;
+  object-fit: cover;
+
+  margin-bottom: 0px;
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.95);
 }
 
 /* Sections */
@@ -133,17 +148,57 @@ p {
 
 /* Lists */
 ul {
-  padding-left: 32px;   /* increases indent */
   margin-top: 12px;
+  padding-left: 20px;   /* controls bullet position */
 }
 
 li {
   margin-bottom: 10px;
-  color: var(--muted);   /* ensures text is full white */
+  color: var(--muted);
 }
 
 li::marker {
-  color: var(--muted);   /* makes bullet same color as text */
+  color: var(--muted);
+}
+
+.social-icons {
+  position: absolute;
+  right: 633px;   /* adjust if needed */
+  top: 340px;    /* adjust to align visually */
+  display: flex;
+  gap: 25px;
+}
+
+.social-icons img {
+  width: 22px;
+  height: 22px;
+}
+
+.social-icons svg {
+  width: 22px;
+  height: 22px;
+  display: block;
+  fill: currentColor; /* key */
+}
+
+.social-icons a {
+  color: var(--muted);
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.social-icons a:hover {
+  color: var(--text);
+  transform: translateY(-2px);
+}
+
+.project-image {
+  width: 100%;
+  margin: 18px 0 20px 0;
+
+  border-radius: 5px;
+  display: block;
+
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.75);
 }
 
 /* Footer */
